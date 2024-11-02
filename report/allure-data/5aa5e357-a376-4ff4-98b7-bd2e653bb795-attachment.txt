@@ -1,0 +1,4 @@
+URL: http://www.httpbin.org/get
+Method: GET
+Headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+Body: No Body
