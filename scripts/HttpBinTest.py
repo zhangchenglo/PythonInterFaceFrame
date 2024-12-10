@@ -34,11 +34,10 @@ class TestHttpBin:
         logging.info("response = {}".format(response.json()))
 
         # 断言
-        assert 200 == response.status_code
+        assert response.status_code == 200
 
     @pytest.mark.run(order=1)
     def test_httpbin_post(self):
-
         images_path = BASE_DIR + os.sep + "data" + os.sep + "avatar.png"
 
         images = open(images_path, "rb")
@@ -49,4 +48,4 @@ class TestHttpBin:
         logging.info("response = {}".format(response.json()))
 
         # 断言
-        assert 200 == response.status_code
+        assert response.status_code == 200
